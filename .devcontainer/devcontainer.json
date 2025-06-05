@@ -8,6 +8,7 @@
       "installOhMyZsh": true
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
+
     "ghcr.io/nikiforovall/devcontainer-features/dotnet-csharpier:1": {},
     "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
       "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
@@ -18,7 +19,12 @@
     "vscode": {
       "extensions": [
         "streetsidesoftware.code-spell-checker",
-        "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "github.vscode-github-actions"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
