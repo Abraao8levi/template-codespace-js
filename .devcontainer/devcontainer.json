@@ -1,3 +1,27 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/nikiforovall/devcontainer-features/dotnet-csharpier:1": {},
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
+    }
+  },
 
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  }
+
+  // Se quiser rodar algo depois da criação do container, descomenta aqui:
+  // "postCreateCommand": "yarn install"
+}
