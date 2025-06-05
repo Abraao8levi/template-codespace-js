@@ -16,12 +16,18 @@
 
   "customizations": {
     "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+      ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "cSpell.language": "en,pt,pt_BR",
+        "cSpell.ignoreWords": [
+          "brazilian",
+          "devcontainers"
+        ]
       }
     }
   }
-
-  // Se quiser rodar algo depois da criação do container, descomenta aqui:
-  // "postCreateCommand": "yarn install"
 }
