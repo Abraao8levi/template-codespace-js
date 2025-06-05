@@ -8,11 +8,11 @@
       "installOhMyZsh": true
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
-
     "ghcr.io/nikiforovall/devcontainer-features/dotnet-csharpier:1": {},
     "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
       "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
-    }
+    },
+    "ghcr.io/gvatsal60/dev-container-features/sonarlint:1": {}
   },
 
   "customizations": {
@@ -24,7 +24,9 @@
         "ms-vscode-remote.remote-containers",
         "mhutchie.git-graph",
         "eamodio.gitlens",
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        "esbenp.prettier-vscode",
+        "SonarSource.sonarlint-vscode"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
@@ -32,7 +34,11 @@
         "cSpell.ignoreWords": [
           "brazilian",
           "devcontainers"
-        ]
+        ],
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4
       }
     }
   }
